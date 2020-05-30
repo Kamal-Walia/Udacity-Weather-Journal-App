@@ -30,8 +30,8 @@ app.get('/getRecords', (req, res) => {
 
 /* POST Request => Add/Register a Record to the Journal(projectData) */
 app.post('/addRecord', (req, res) => {
-  projectData['date'] = req.body.date;
-  projectData['temp'] = req.body.temp;
-  projectData['content'] = req.body.content;
-  res.send(projectData);
+    projectData['date'] = req.body.date;
+    projectData['temp'] = req.body.temp;
+    projectData['content'] = req.body.content;
+    res.send(projectData);
 });
